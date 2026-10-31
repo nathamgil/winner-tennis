@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Torneios · Winner Tennis</title>
+<meta name="description" content="Copa Futuro, Winner Open / Circuito Amizade e Circuito Litoral Norte: inscrição, chaves, ranking e resultados.">
+<link rel="icon" href="fotos/logo-winner.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css?v=20261031153626">
+</head>
+<body>
+<div class="demo-faixa"><b>Demonstração.</b> Proposta de site novo para a Winner Tennis. Formulários funcionam, dados de exemplo ficam só neste aparelho.</div>
+
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="index.html"><img src="fotos/logo-winner.jpg" alt="" width="48" height="48"><span>Winner<small>Tennis · Salvador</small></span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="programas.html">Programas</a>
+      <a href="torneios.html" aria-current="page">Torneios</a>
+      <a href="index.html#quadra">Aluguel de quadra</a>
+      <a href="index.html#contato">Contato</a>
+      <a href="aluno.html">Área do aluno</a>
+      <a class="btn btn-pq" href="index.html#experimental">Aula experimental</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="pag-cab saibro">
+    <div class="wrap">
+      <span class="rotulo">Torneios Winner</span>
+      <h1>Inscrição, chave e ranking no mesmo lugar</h1>
+      <p class="lead">Escolha o circuito, inscreva o atleta e acompanhe a chave e o ranking da categoria, etapa por etapa.</p>
+    </div>
+  </section>
+  <div class="wrap">
+    <div class="abas" id="abas" role="tablist" aria-label="Torneios" style="margin-top:32px"></div>
+    <div class="t-ficha" id="ficha"></div>
+
+    <div class="bloco" id="inscricao" style="scroll-margin-top:90px">
+      <h3>Inscrição</h3>
+      <p class="nota">A inscrição fica registrada aqui e vai para o painel da Winner; o pagamento é confirmado pelo WhatsApp.</p>
+      <div id="inscricao-corpo" style="max-width:720px"></div>
+    </div>
+
+    <div class="bloco" id="chaves" style="scroll-margin-top:90px">
+      <h3>Chaves</h3>
+      <p class="aviso-demo">Demonstração: nomes de atletas e placares são fictícios. As categorias da Copa Futuro são de exemplo até lermos o regulamento.</p>
+      <div class="sub-abas" id="chaves-etapas" style="margin:0 0 8px"></div>
+      <div class="sub-abas" id="chaves-cats" style="margin:0 0 24px"></div>
+      <div id="chaves-corpo"></div>
+    </div>
+
+    <div class="bloco" id="ranking" style="scroll-margin-top:90px">
+      <h3>Ranking · <span id="ranking-cat"></span></h3>
+      <p class="nota">Soma dos pontos por etapa. Tabela de pontos de exemplo (campeão 100, vice 70, semi 45, quartas 25): a confirmar com o regulamento.</p>
+      <div id="ranking-corpo"></div>
+    </div>
+
+    <div class="bloco" id="resultados" style="scroll-margin-top:90px">
+      <h3>Resultados por etapa</h3>
+      <p class="nota">Campeões, vices e placar da final de cada categoria.</p>
+      <div id="resultados-corpo"></div>
+    </div>
+  </div>
+  <section class="verde">
+    <div class="wrap cab" style="margin:0">
+      <div><span class="rotulo">Atleta da Winner?</span><h2>Suas chaves na área do aluno</h2></div>
+      <div><p class="lead" style="color:#E1EAE5">Quem é aluno vê as próprias competições, a chave com o nome destacado e os avisos da turma.</p><a class="btn btn-bola" href="aluno.html" style="margin-top:20px">Entrar na área do aluno</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div><b>Winner Tennis</b><br>Referência no tênis baiano, para todos os níveis e idades.</div>
+    <div><a href="programas.html">Programas</a> · <a href="torneios.html">Torneios</a> · <a href="aluno.html">Área do aluno</a> · <a href="admin.html">Painel</a></div>
+    <div>WhatsApp <a href="https://wa.me/5571991298828">(71) 9 9129-8828</a></div>
+  </div>
+</footer>
+
+<script src="assets/config.js?v=20261031153626"></script>
+<script src="assets/dados.js?v=20261031153626"></script>
+<script src="assets/site.js?v=20261031153626"></script>
+<script src="assets/torneios.js?v=20261031153626"></script>
+</body>
+</html>

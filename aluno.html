@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Área do aluno · Winner Tennis</title>
+<meta name="description" content="Área do aluno Winner Tennis: turma, frequência, nível, competições e avisos.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="fotos/logo-winner.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/estilo.css?v=20261031153626">
+</head>
+<body>
+<div class="demo-faixa"><b>Demonstração.</b> Proposta de site novo para a Winner Tennis. Formulários funcionam, dados de exemplo ficam só neste aparelho.</div>
+
+<header class="topo">
+  <div class="wrap">
+    <a class="marca" href="index.html"><img src="fotos/logo-winner.jpg" alt="" width="48" height="48"><span>Winner<small>Tennis · Salvador</small></span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">Menu</button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="programas.html">Programas</a>
+      <a href="torneios.html">Torneios</a>
+      <a href="index.html#quadra">Aluguel de quadra</a>
+      <a href="index.html#contato">Contato</a>
+      <a href="aluno.html" aria-current="page">Área do aluno</a>
+      <a class="btn btn-pq" href="index.html#experimental">Aula experimental</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section id="v-login">
+    <div class="wrap">
+      <div class="login">
+        <span class="rotulo" style="color:var(--saibro)">Área do aluno</span>
+        <h1 style="font-size:clamp(44px,8vw,72px);margin:12px 0 24px">Entrar</h1>
+        <form class="form" id="form-login" novalidate>
+          <div class="campos">
+            <label class="cheio">Usuário<input id="l-usuario" autocomplete="username" autocapitalize="none" required></label>
+            <label class="cheio">Senha<input id="l-senha" type="password" autocomplete="current-password" required></label>
+          </div>
+          <button class="btn" type="submit">Entrar</button>
+          <div id="l-msg" role="alert"></div>
+          <div class="cred" id="credenciais"><p style="margin:0 0 12px"><b>Logins da demonstração</b> (dados fictícios):</p></div>
+        </form>
+        <p class="nota">No site real, cada aluno (ou responsável) recebe o acesso na matrícula e vê só os próprios dados.</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="v-painel" hidden>
+    <section class="pag-cab" style="padding:48px 0 40px">
+      <div class="wrap" style="display:flex;flex-wrap:wrap;gap:20px;align-items:end;justify-content:space-between">
+        <div>
+          <span class="rotulo">Área do aluno</span>
+          <h1 id="a-ola" style="font-size:clamp(44px,8vw,80px);margin-top:12px"></h1>
+          <p class="lead" id="a-quem" style="margin-top:12px"></p>
+        </div>
+        <button class="btn btn-vazado" id="sair" type="button" style="color:#fff">Sair</button>
+      </div>
+    </section>
+    <section style="padding-top:40px">
+      <div class="wrap painel-aluno">
+        <div class="caixa terco" id="a-turma"></div>
+        <div class="caixa terco" id="a-freq"></div>
+        <div class="caixa terco" id="a-nivel"></div>
+        <div class="caixa" id="a-evolucao"></div>
+        <div class="caixa" id="a-avisos"></div>
+        <div class="caixa larga" id="a-comp"></div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div><b>Winner Tennis</b><br>Referência no tênis baiano, para todos os níveis e idades.</div>
+    <div><a href="programas.html">Programas</a> · <a href="torneios.html">Torneios</a> · <a href="aluno.html">Área do aluno</a> · <a href="admin.html">Painel</a></div>
+    <div>WhatsApp <a href="https://wa.me/5571991298828">(71) 9 9129-8828</a></div>
+  </div>
+</footer>
+
+<script src="assets/config.js?v=20261031153626"></script>
+<script src="assets/dados.js?v=20261031153626"></script>
+<script src="assets/site.js?v=20261031153626"></script>
+<script src="assets/aluno.js?v=20261031153626"></script>
+</body>
+</html>
